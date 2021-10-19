@@ -1,19 +1,348 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:screenOrientation="landscape"
     tools:context=".MainActivity">
 
-    <TextView
+    <LinearLayout
+        android:id="@+id/scoreLayout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <TextView
+            android:id="@+id/scoreText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="СЧЕТ: "
+            android:textColor="#000"
+            android:textSize="21dp"/>
+
+        <TextView
+            android:id="@+id/score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="#000"
+            android:textSize="21dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below = "@+id/scoreLayout"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_marginHorizontal="10dp">
+            <TextView
+                android:id="@+id/word11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="горсть"
+                android:textColor="#000"
+                android:textSize="20dp"
+                android:visibility="invisible"/>
+            <TextView
+                android:id="@+id/word12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="трость"
+                android:textColor="#000"
+                android:textSize="20dp"
+                android:visibility="invisible"/>
+            <TextView
+                android:id="@+id/word13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="гость"
+                android:textColor="#000"
+                android:textSize="20dp"
+                android:visibility="invisible"/>
+            <TextView
+                android:id="@+id/word14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="грот"
+                android:textColor="#000"
+                android:textSize="20dp"
+                android:visibility="invisible"/>
+            <TextView
+                android:id="@+id/word15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="осот"
+                android:textColor="#000"
+                android:textSize="20dp"
+                android:visibility="invisible"/>
+            <TextView
+                android:id="@+id/word16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="рост"
+                android:textColor="#000"
+                android:textSize="20dp"
+                android:visibility="invisible"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_marginHorizontal="10dp">
+            <TextView
+                android:id="@+id/word21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="сорт"
+                android:textColor="#000"
+                android:textSize="20dp"
+                android:visibility="invisible"/>
+            <TextView
+                android:id="@+id/word22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="стог"
+                android:textColor="#000"
+                android:textSize="20dp"
+                android:visibility="invisible"/>
+            <TextView
+                android:id="@+id/word23"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="торг"
+                android:textColor="#000"
+                android:textSize="20dp"
+                android:visibility="invisible"/>
+            <TextView
+                android:id="@+id/word24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="торс"
+                android:textColor="#000"
+                android:textSize="20dp"
+                android:visibility="invisible"/>
+            <TextView
+                android:id="@+id/word25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="торт"
+                android:textColor="#000"
+                android:textSize="20dp"
+                android:visibility="invisible"/>
+            <TextView
+                android:id="@+id/word26"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="тост"
+                android:textColor="#000"
+                android:textSize="20dp"
+                android:visibility="invisible"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_marginHorizontal="10dp">
+            <TextView
+                android:id="@+id/word31"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="трос"
+                android:textColor="#000"
+                android:textSize="20dp"
+                android:visibility="invisible"/>
+            <TextView
+                android:id="@+id/word32"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="гот"
+                android:textColor="#000"
+                android:textSize="20dp"
+                android:visibility="invisible"/>
+            <TextView
+                android:id="@+id/word33"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="огр"
+                android:textColor="#000"
+                android:textSize="20dp"
+                android:visibility="invisible"/>
+            <TextView
+                android:id="@+id/word34"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ось"
+                android:textColor="#000"
+                android:textSize="20dp"
+                android:visibility="invisible"/>
+            <TextView
+                android:id="@+id/word35"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="рог"
+                android:textColor="#000"
+                android:textSize="20dp"
+                android:visibility="invisible"/>
+            <TextView
+                android:id="@+id/word36"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="рот"
+                android:textColor="#000"
+                android:textSize="20dp"
+                android:visibility="invisible"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_marginHorizontal="10dp">
+            <TextView
+                android:id="@+id/word41"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="сор"
+                android:textColor="#000"
+                android:textSize="20dp"
+                android:visibility="invisible"/>
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text=""
+        android:textColor="#000"
+        android:textSize="40dp"
+        android:layout_marginVertical="10dp"
+        android:layout_above = "@+id/buttons"
+        android:layout_centerHorizontal="true"/>
+
+    <LinearLayout
+        android:id="@+id/OkDell"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_above = "@+id/buttons"
+        android:layout_alignRight = "@+id/buttons">
+
+        <Button
+            android:onClick="onOkClick"
+            android:id="@+id/OK"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:text="✔"
+            android:background="#00FF00"/>
+        <Button
+            android:onClick="onDellClick"
+            android:id="@+id/dell"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:text="✘"
+            android:background="#CC0000"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/buttons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom = "true"
+        android:gravity="center"
+        android:layout_centerHorizontal="true">
+
+        <Button
+            android:onClick="onMyButtonClick"
+            android:id="@+id/button"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:text="С" />
+        <Button
+            android:onClick="onMyButtonClick"
+            android:id="@+id/button2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:text="Т" />
+        <Button
+            android:onClick="onMyButtonClick"
+            android:id="@+id/button3"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:text="Р" />
+        <Button
+            android:onClick="onMyButtonClick"
+            android:id="@+id/button4"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:text="О" />
+        <Button
+            android:onClick="onMyButtonClick"
+            android:id="@+id/button5"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:text="Г" />
+        <Button
+            android:onClick="onMyButtonClick"
+            android:id="@+id/button6"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:text="О" />
+        <Button
+            android:onClick="onMyButtonClick"
+            android:id="@+id/button7"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:text="С" />
+        <Button
+            android:onClick="onMyButtonClick"
+            android:id="@+id/button8"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:text="Т" />
+        <Button
+            android:onClick="onMyButtonClick"
+            android:id="@+id/button1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:text="Ь" />
+    </LinearLayout>
+
+</RelativeLayout>
